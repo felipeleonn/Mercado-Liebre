@@ -13,9 +13,17 @@ Verde: #39b54a;
 */
 
 
+
+
 /* 
 ACÁ EMPIEZA HEADER
  */
+
+
+
+
+
+
 header {
   background-color: #EAC926;
   padding-bottom: 1.5rem;
@@ -34,10 +42,15 @@ header p {
   padding-left: 1rem;
   padding-bottom: .6rem;
 }
-
+form input {
+  width: 200px;
+}
 .formButton {
+  display: block;
+  height: 20px;
   padding: 0;
 }
+
 /* SVG HEADER */
 .lupita {
   width: 15px;
@@ -66,6 +79,14 @@ nav ul {
   padding: .6rem;
   border-radius: 5px;
 }
+
+
+
+
+
+
+
+
 /*
 ACÁ TERMINA HEADER 
 */
