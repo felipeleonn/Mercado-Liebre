@@ -1,0 +1,94 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+
+/* 
+ACÁ EMPIEZA HEADER
+ */
+header {
+  background-color: #EAC926;
+  padding-bottom: 1.5rem;
+}
+header p {
+  text-align: center;
+}
+
+.containerLogoSearchBar {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.logo {
+  width: 150px;
+  padding-left: 1rem;
+  padding-bottom: .6rem;
+}
+
+.formButton {
+  padding: 0;
+}
+/* SVG HEADER */
+.lupita {
+  width: 15px;
+  padding: 0;
+}
+.iconosHeader {
+  width: 15px;
+  padding-left: .2rem;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.burger-menu {
+  text-align: center;
+}
+.fas {
+  color: white;
+  background-color: #1259c3;
+  padding: .6rem;
+  border-radius: 5px;
+}
+/*
+ACÁ TERMINA HEADER 
+*/
+
+
+
+
+
+
+.titulares {
+  font-size: 24px;
+  font-weight: bold;
+}
+.precio {
+  font-size: 18px;
+}
+.descuento {
+  font-size: 16px;
+}
+.cuerposTexto {
+  font-size: 12px;
+}
+
+
+
+
