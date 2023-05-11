@@ -31,6 +31,11 @@ header {
   background-color: #EAC926;
   padding-bottom: 1.5rem;
 }
+
+header nav {
+  display: none;
+}
+
 header p {
   text-align: center;
 }
@@ -99,7 +104,9 @@ nav ul {
 
 
 
-
+.banner-img {
+  width: 100vw;
+}
 
 
 
@@ -115,14 +122,16 @@ ACÁ EMPIEZA MAIN
 
 
 
-main {
-  text-align: center;
-}
-
 .titulares {
   font-size: 24px;
   font-weight: bold;
   color: #666;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main article {
@@ -132,6 +141,8 @@ main article {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
 }
 
 .infoArticle {
@@ -153,13 +164,15 @@ main article {
   width: 40px;
   height: 40px;
   border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .iconosMain {
   fill: #39b54a;
   width: 20px;
-  margin-left: 5px;
-  margin-top: 5px;
 }
 
 .precio {
@@ -172,9 +185,7 @@ main article {
 }
 
 .nombreProducto {
-  color: #666;
-  font-weight: 500;
-  margin-top: 1.5rem !important;
+  display: none;
 }
 
 
@@ -261,3 +272,35 @@ ACÁ EMPIEZA FOOTER
 
 
 /* ACÁ TERMINA FOOTER */
+
+
+
+
+
+
+
+
+
+/* PUNTOS DE QUIEBRE */
+
+@media (min-width: 361px) {
+  .nombreProducto {
+    display: block;
+    color: #666;
+    font-weight: 500;
+    margin-top: 1.5rem !important;
+  }
+
+  main article {
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, .4);
+  }
+
+  header nav {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
