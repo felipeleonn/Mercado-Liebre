@@ -1,7 +1,12 @@
-body {
-  font-family: 'Roboto', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+
   box-sizing: border-box;
-  
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
   background-color:#ebebeb;
 }
 
@@ -105,7 +110,7 @@ nav ul {
 
 
 .banner-img {
-  width: 100vw;
+  width: 100%;
 }
 
 
@@ -119,13 +124,20 @@ nav ul {
 ACÁ EMPIEZA MAIN
 */
 
-
+.contenedorUltimaVisita, 
+.contenedorOfertas {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
 
 
 .titulares {
   font-size: 24px;
   font-weight: bold;
   color: #666;
+  padding: 1.5rem;
+  align-self: flex-start;
 }
 
 main section {
@@ -141,8 +153,6 @@ main article {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
 }
 
 .infoArticle {
@@ -150,20 +160,26 @@ main article {
   width: 300px;
   border-top: solid 1px #ebebeb;
   padding: 15px;
+  padding-top: 0px;
   text-align: left;
-
   box-sizing: border-box;
+
 }
 
-.infoArticle p {
-  margin: 0;
-}
 
 .circuloVerde {
+  display: block;
   border: 1px solid #39b54a;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFF;
+  padding: 5px;
+
+  position: relative;
+  z-index: 3;
+  left: 230px;
+  top: -15px;
 
   display: flex;
   align-items: center;
@@ -175,7 +191,13 @@ main article {
   width: 20px;
 }
 
+.contenedorPrecioDescuento {
+  display: flex;
+  align-items: flex-end;
+}
+
 .precio {
+  margin-right: .5rem;
   font-size: 18px;
 }
 
@@ -302,5 +324,28 @@ ACÁ EMPIEZA FOOTER
   .burger-menu {
     display: none;
   }
+
+  .seccionUltimaVisita,
+  .seccionOfertas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1280px) {
+  .mainProductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedorUltimaVisita article,
+  .contenedorOfertas article{
+    margin-left: 1.5rem;
+  }
+}
