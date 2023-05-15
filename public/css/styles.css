@@ -333,11 +333,62 @@ ACÁ EMPIEZA FOOTER
   }
 }
 
+
+
+
+
+
 @media (min-width: 768px) {
-  
+  header nav {
+    display: flex;
+    justify-content: space-evenly;
+  } 
+  header nav ul {
+    display: flex;
+    padding-left: 1.5rem;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin-right: 1.5rem;
+  }
+
+  .containerLogoSearchBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .containerLogoSearchBar form {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .footerContainer {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
+
+
+
+
 @media (min-width: 1280px) {
+  .logo {
+    width: 400px;
+  }
+
+
   .mainProductos {
     display: flex;
     flex-direction: column;
