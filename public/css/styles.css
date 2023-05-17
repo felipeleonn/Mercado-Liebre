@@ -47,27 +47,49 @@ header p {
 
 .containerLogoSearchBar {
   padding-top: 1.5rem;
-  padding-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap ;
+  align-items: center;
+}
+
+.containerLogoSearchBar p {
+  margin-top: 1.5rem;
+}
+
+.containerLogoSearchBar form {
+  display: flex;
+  background-color: white;
+  padding: .6rem .3rem;
+  border-radius: 5px;
+  margin-left: 1rem;
 }
 
 .logo {
-  width: 150px;
-  padding-left: 1rem;
+  width: 200px;
   padding-bottom: .6rem;
 }
-form input {
-  width: 200px;
+
+
+.containerLogoSearchBar form input {
+  border: none;
 }
+
+
 .formButton {
+  border: none;
   display: block;
   height: 20px;
   padding: 0;
+  background-color: transparent;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 /* SVG HEADER */
 .lupita {
-  width: 15px;
-  padding: 0;
+  width: 18px;
+  fill: #666;
 }
 .iconosHeader {
   width: 15px;
@@ -318,12 +340,12 @@ ACÁ EMPIEZA FOOTER
   }
 
   header nav {
-    display: block;
-  }
-
-  .burger-menu {
     display: none;
   }
+  .burger-menu {
+    margin-top: 1.5rem;
+  }
+
 
   .seccionUltimaVisita,
   .seccionOfertas {
@@ -340,9 +362,16 @@ ACÁ EMPIEZA FOOTER
 
 @media (min-width: 768px) {
   header nav {
+    display: block;
     display: flex;
     justify-content: space-evenly;
+    
   } 
+
+  .burger-menu {
+    display: none;
+  }
+
   header nav ul {
     display: flex;
     padding-left: 1.5rem;
@@ -385,7 +414,7 @@ ACÁ EMPIEZA FOOTER
 
 @media (min-width: 1280px) {
   .logo {
-    width: 400px;
+    width: 300px;
   }
 
 
