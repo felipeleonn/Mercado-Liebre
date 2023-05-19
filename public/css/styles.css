@@ -381,7 +381,8 @@ ACÁ EMPIEZA FOOTER
   justify-content: space-between;
 }
 
-.containerBotonesRegistro button {
+.containerBotonesRegistro button,
+.botonLogin {
   background-color: rgb(16, 16, 16);
   color: white;
   border: none;
@@ -391,7 +392,8 @@ ACÁ EMPIEZA FOOTER
   transition: .2s;
 }
 
-.containerBotonesRegistro button:hover {
+.containerBotonesRegistro button:hover,
+.botonLogin:hover {
   background-color: white;
   color: black;
   border: solid 1px black;
