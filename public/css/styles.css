@@ -325,6 +325,87 @@ ACÁ EMPIEZA FOOTER
 
 
 
+
+
+
+
+
+/* FORMULARIO REGISTRO */
+
+.mainRegistro {
+  display: flex;
+  justify-content: center;
+}
+
+.containerFormularioRegistro {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  padding: 1rem;
+}
+
+.containerFormularioRegistro input {
+  padding: .7rem 1rem;
+  border: none;
+  margin-bottom: 2.5rem;
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+
+.containerFormularioRegistro label {
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+
+.containerPerfilUsuario {
+  display: flex;
+}
+
+
+.checkboxRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+
+
+
+
+
+.containerBotonesRegistro {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.containerBotonesRegistro button {
+  background-color: rgb(16, 16, 16);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  border: solid 1px rgb(16, 16, 16);
+  transition: .2s;
+}
+
+.containerBotonesRegistro button:hover {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+
+}
+
+
+
+
+
+
+
+
+
 /* PUNTOS DE QUIEBRE */
 
 @media (min-width: 361px) {

@@ -112,8 +112,8 @@
       </div>
     </header>
 
-    <main>
-      <form action="/" method="GET">
+    <main class="mainRegistro">
+      <form class="containerFormularioRegistro" action="/" method="GET">
         <input type="text" name="nombre" placeholder="Nombre y apellido" />
         <input type="text" name="usuario" placeholder="Nombre de usuario" />
         <input type="email" name="email" placeholder="E-mail" />
@@ -130,18 +130,49 @@
         <input type="text" name="domicilio" placeholder="Domicilio" />
 
         <label for="perfilUsuario">Perfil del usuario</label>
-        <input type="radio" name="perfil" value="Comprador" />
-        <input type="radio" name="perfil" value="Vendedor" />
+        <div class="containerPerfilUsuario">
+          <input
+            type="radio"
+            name="perfil"
+            id="perfilUsuario"
+            value="Comprador"
+          />
+          <input
+            type="radio"
+            name="perfil"
+            id="perfilUsuario"
+            value="Vendedor"
+          />
+        </div>
+        <label for="hobbies">Intereses</label>
+        <div class="checkboxRegistro">
+          <input type="checkbox" name="hobbies" id="hobbies" value="Electro" />
+          <input type="checkbox" name="hobbies" id="hobbies" value="Moda" />
+          <input type="checkbox" name="hobbies" id="hobbies" value="Hogar" />
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="hobbies"
+            value="Juguetería"
+          />
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="hobbies"
+            value="Vida Sana"
+          />
+        </div>
 
-        <label for="intereses">Intereses</label>
-        <input type="checkbox" name="hobbies" value="Electro" />
-        <input type="checkbox" name="hobbies" value="Moda" />
-        <input type="checkbox" name="hobbies" value="Hogar" />
-        <input type="checkbox" name="hobbies" value="Juguetería" />
-        <input type="checkbox" name="hobbies" value="Vida Sana" />
-
-        <label for="profilePic">Seleccionar una imagen para el perfil:</label>
-        <input type="file" name="profilePic" accept=".jpg" multiple />
+        <div class="contenedorPerfilRegistro">
+          <label for="profilePic">Seleccionar una imagen para el perfil:</label>
+          <input
+            type="file"
+            name="profilePic"
+            id="profilePic"
+            accept=".jpg"
+            multiple
+          />
+        </div>
 
         <input type="password" name="password" placeholder="Contraseña" />
         <input
@@ -150,8 +181,10 @@
           placeholder="Confirmar Contraseña"
         />
 
-        <button type="reset">Cancelar</button>
-        <button type="submit">Enviar</button>
+        <div class="containerBotonesRegistro">
+          <button type="submit">Enviar</button>
+          <button type="reset">Cancelar</button>
+        </div>
       </form>
     </main>
 
