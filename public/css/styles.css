@@ -33,13 +33,14 @@ ACÁ EMPIEZA HEADER
 
 
 header {
-  background-color: #EAC926;
+  background-color: #fff159;
   padding-bottom: 1.5rem;
 
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+
 
   z-index: 999;
 
@@ -62,9 +63,6 @@ header p {
   align-items: center;
 }
 
-.containerLogoSearchBar p {
-  margin-top: 1.5rem;
-}
 
 .containerLogoSearchBar form {
   display: flex;
@@ -75,7 +73,7 @@ header p {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
   padding-bottom: .6rem;
 }
 
@@ -123,6 +121,13 @@ nav ul {
   padding: .6rem;
   border-radius: 5px;
 }
+
+
+.ubicacion {
+  display: flex;
+  align-items: center;
+}
+
 
 
 
@@ -191,9 +196,10 @@ main article {
   align-items: center;
 }
 
+
 .infoArticle {
   background-color: white;
-  width: 300px;
+  width: 100%;
   border-top: solid 1px #ebebeb;
   padding: 15px;
   padding-top: 0px;
@@ -214,7 +220,7 @@ main article {
 
   position: relative;
   z-index: 3;
-  left: 230px;
+  left: 190px;
   top: -15px;
 
   display: flex;
@@ -230,6 +236,7 @@ main article {
 .contenedorPrecioDescuento {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 16px;
 }
 
 .precio {
@@ -242,11 +249,10 @@ main article {
   color: #39b54a;
 }
 
+
 .nombreProducto {
   display: none;
 }
-
-
 
 
 
@@ -427,12 +433,7 @@ ACÁ EMPIEZA FOOTER
 /* PUNTOS DE QUIEBRE */
 
 @media (min-width: 361px) {
-  .nombreProducto {
-    display: block;
-    color: #666;
-    font-weight: 500;
-    margin-top: 1.5rem !important;
-  }
+
 
   main article {
     box-shadow: 0px 0px 10px rgba(100, 100, 100, .4);
@@ -460,12 +461,21 @@ ACÁ EMPIEZA FOOTER
 
 
 @media (min-width: 768px) {
+
+  header {
+    height: 100px;
+  }
+
   header nav {
     display: block;
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: center;
+    align-items: center;
   } 
+
+  .containerLogoSearchBar p {
+    margin-left: 2rem;
+  }
 
   .burger-menu {
     display: none;
@@ -475,6 +485,12 @@ ACÁ EMPIEZA FOOTER
     display: flex;
     padding-left: 1.5rem;
     align-items: center;
+    margin-left: 3rem;
+  }
+
+  header form input {
+    width: 400px;
+    border: none;
   }
 
   header nav ul li {
@@ -484,12 +500,12 @@ ACÁ EMPIEZA FOOTER
   .containerLogoSearchBar {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    padding-top: .5rem;
   }
 
   .logo {
-    width: 200px;
+    width: 100px;
   }
 
   .containerLogoSearchBar form {
@@ -510,6 +526,29 @@ ACÁ EMPIEZA FOOTER
   .containerFormularioRegistro {
     margin-top: 152px;
   }
+
+  .nombreProducto {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  article:hover .nombreProducto {
+    color: #666;
+    font-weight: 500;
+    opacity: 1;
+  }
+  
+  article:hover {
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, .9);;
+  }
+
+
+  .iconosMain {
+    transition: .2s;
+  }
+  article:hover .iconosMain {
+    rotate: -90deg;
+  }
 }
 
 
@@ -518,7 +557,7 @@ ACÁ EMPIEZA FOOTER
 
 @media (min-width: 1280px) {
   .logo {
-    width: 300px;
+    width: 150px;
   }
 
 
@@ -526,11 +565,11 @@ ACÁ EMPIEZA FOOTER
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 177px;
+    margin-top: 100px;
   }
 
   .containerFormularioRegistro {
-    margin-top: 177px;
+    margin-top: 100px;
   }
 
   .contenedorUltimaVisita article,
