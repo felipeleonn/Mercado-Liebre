@@ -68,8 +68,13 @@ header p {
   display: flex;
   background-color: white;
   padding: .6rem .3rem;
-  border-radius: 5px;
+  border-radius: 2px;
   margin-left: 1rem;
+  box-shadow: 1px 2px 1px rgba(100, 100, 100, .1);
+}
+
+.containerLogoSearchBar p {
+  margin-top: 1rem;
 }
 
 .logo {
@@ -80,8 +85,8 @@ header p {
 
 .containerLogoSearchBar form input {
   border: none;
+  font-size: 14px;
 }
-
 
 .formButton {
   border: none;
@@ -96,7 +101,7 @@ header p {
 /* SVG HEADER */
 .lupita {
   width: 18px;
-  fill: #666;
+  fill: #c6c6c6;
 }
 .iconosHeader {
   width: 15px;
@@ -161,7 +166,7 @@ nav ul {
 
 
 .navIzq {
-  margin-right: 3rem;
+  margin-right: 10rem;
 }
 
 
@@ -200,7 +205,7 @@ main {
 
 
 .mainProductos {
-  margin-top: 211px;
+  margin-top: 180px;
 }
 
 
@@ -234,6 +239,10 @@ main article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  transition: .3s;
 }
 
 
@@ -246,6 +255,8 @@ main article {
   text-align: left;
   box-sizing: border-box;
 
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 
@@ -480,7 +491,7 @@ footer {
 
 
   main article {
-    box-shadow: 0px 0px 10px rgba(100, 100, 100, .4);
+    box-shadow: 0px 1px 0px rgba(100, 100, 100, .2);
   }
 
   header nav {
@@ -506,9 +517,6 @@ footer {
 
 @media (min-width: 768px) {
 
-  header {
-    height: 100px;
-  }
 
   header nav {
     display: block;
@@ -529,13 +537,19 @@ footer {
     display: flex;
     padding-left: 1.5rem;
     align-items: center;
-    margin-left: 3rem;
+    margin-left: 4.5rem;
   }
 
   header form input {
-    width: 400px;
-    border: none;
+    width: 550px;
+    padding-left: .5rem;
   }
+
+  header form input:focus {
+    border: solid 1px reds;
+  }
+
+
 
   header nav ul li {
     margin-right: 1.5rem;
@@ -547,9 +561,11 @@ footer {
     justify-content: center;
     padding-top: .5rem;
   }
-
+  .containerLogoSearchBar p {
+    margin-top: 0rem;
+  }
   .logo {
-    width: 100px;
+    width: 150px;
   }
 
   .containerLogoSearchBar form {
@@ -577,13 +593,14 @@ footer {
     transition: opacity 0.3s ease;
   }
   article:hover .nombreProducto {
-    color: #666;
+    color: #9a9a9a;
     font-weight: 500;
     opacity: 1;
+    font-weight: 400x;
   }
   
   article:hover {
-    box-shadow: 0px 0px 10px rgba(100, 100, 100, .9);;
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, .5);;
   }
 
 
@@ -592,6 +609,17 @@ footer {
   }
   article:hover .iconosMain {
     rotate: -90deg;
+  }
+
+
+
+  .footerLogin {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 330px;
+
   }
 }
 
@@ -604,6 +632,9 @@ footer {
     width: 150px;
   }
 
+  header {
+    height: 100px;
+  }
 
   .mainProductos {
     display: flex;

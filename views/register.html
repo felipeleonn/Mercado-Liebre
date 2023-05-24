@@ -35,7 +35,7 @@
           <input
             type="text"
             name="searchIcon"
-            placeholder="Buscar productos, marcas"
+            placeholder="Buscar productos, marcas y más..."
           />
           <button class="formButton" type="submit">
             <!-- SEARCH ICON -->
@@ -65,7 +65,18 @@
       </div>
 
       <nav>
-        <ul>
+        <div class="ubicacion">
+          <img
+            class="mapPointer"
+            src="/img/location.png"
+            alt="Location Pointer"
+          />
+          <div>
+            <p>Enviar a DH</p>
+            <p>Av. Monroe 860</p>
+          </div>
+        </div>
+        <ul class="navIzq">
           <li><a href="#">Ofertas</a></li>
           <li><a href="#">Tiendas Oficiales</a></li>
           <li><a href="#">Vender</a></li>
@@ -97,7 +108,7 @@
             </svg>
           </li>
           <li>
-            <a href="#">Mis compras</a>
+            <a href="">Mis compras</a>
             <svg
               class="iconosHeader"
               xmlns="http://www.w3.org/2000/svg"
@@ -110,6 +121,7 @@
           </li>
         </ul>
       </nav>
+
       <div class="burger-menu">
         <i class="fas fa-bars"></i>
       </div>
@@ -190,7 +202,61 @@
         </div>
       </form>
     </main>
+    <footer>
+      <div class="footerContainer">
+        <section>
+          <svg
+            class="iconosFooter"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            <path
+              d="M64 32C28.7 32 0 60.7 0 96v32H576V96c0-35.3-28.7-64-64-64H64zM576 224H0V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V224zM112 352h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16z"
+            />
+          </svg>
+          <p class="tituloTextoFooter">Pagá con tarjeta o en efectivo</p>
+          <p class="cuerposTexto">
+            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+            efectivo en puntos de pago. ¡Y siempre es seguro!
+          </p>
+        </section>
 
-    <footer></footer>
+        <section>
+          <svg
+            class="iconosFooter"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z"
+            />
+          </svg>
+          <p class="tituloTextoFooter">Envío gratis desde $ 2.500</p>
+          <p class="cuerposTexto">
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+            miles de productos. Es un beneficio de Mercado Puntos.
+          </p>
+        </section>
+
+        <section>
+          <svg
+            class="iconosFooter"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+          >
+            <path
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c1.8 0 3.5-.2 5.3-.5c-76.3-55.1-99.8-141-103.1-200.2c-16.1-4.8-33.1-7.3-50.7-7.3H178.3zm308.8-78.3l-120 48C358 277.4 352 286.2 352 296c0 63.3 25.9 168.8 134.8 214.2c5.9 2.5 12.6 2.5 18.5 0C614.1 464.8 640 359.3 640 296c0-9.8-6-18.6-15.1-22.3l-120-48c-5.7-2.3-12.1-2.3-17.8 0zM591.4 312c-3.9 50.7-27.2 116.7-95.4 149.7V273.8L591.4 312z"
+            />
+          </svg>
+          <p class="tituloTextoFooter">Seguridad, de principio a fin</p>
+          <p class="cuerposTexto">
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+            puedas hacer, porque estás siempre protegid@.
+          </p>
+        </section>
+      </div>
+
+      <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
   </body>
 </html>
