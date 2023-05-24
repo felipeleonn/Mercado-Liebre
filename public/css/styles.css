@@ -73,8 +73,8 @@ header p {
 }
 
 .logo {
-  width: 150px;
-  padding-bottom: .6rem;
+  width: 120px;
+  margin-right: 3rem;
 }
 
 
@@ -101,12 +101,25 @@ header p {
 .iconosHeader {
   width: 15px;
   padding-left: .2rem;
+  opacity: .5;
+}
+
+.iconoHeader:hover {
+  opacity: 1;
 }
 
 nav ul li a {
-  color: black;
+  color: rgba(51,51,51,.6);
   text-decoration: none;
+  font-size: 14px;
+
+  transition: .2s;
 }
+
+nav ul li a:hover {
+  color: black;
+}
+
 nav ul {
   list-style-type: none;
   padding-left: 0;
@@ -125,11 +138,31 @@ nav ul {
 
 .ubicacion {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  
+
+}
+
+.ubicacion p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.ubicacion p:first-of-type {
+  color: rgba(51,51,51,.6);
+  font-size: 13px;
+}
+
+.mapPointer {
+  margin-bottom: 1rem;
+  margin-right: .3rem;
+  width: 23px;
 }
 
 
-
+.navIzq {
+  margin-right: 3rem;
+}
 
 
 
@@ -159,6 +192,13 @@ nav ul {
 /* 
 ACÁ EMPIEZA MAIN
 */
+
+main {
+  margin-bottom: 5rem;
+}
+
+
+
 .mainProductos {
   margin-top: 211px;
 }
@@ -255,7 +295,9 @@ main article {
 }
 
 
-
+.titulares {
+  font-weight: 400;
+}
 
 /* ACÁ TERMINA MAIN */
 
@@ -288,14 +330,16 @@ ACÁ EMPIEZA FOOTER
 
 
 
-
+footer {
+  background-color: white;
+}
 
 .footerContainer {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.footerContainer article {
+.footerContainer section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -470,7 +514,7 @@ ACÁ EMPIEZA FOOTER
     display: block;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
   } 
 
   .containerLogoSearchBar p {
