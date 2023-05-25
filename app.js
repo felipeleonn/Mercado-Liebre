@@ -9,8 +9,8 @@ const path = require ('path')
 
 app.use (express.static('public'))
 
-app.listen(3000, () => {
-  console.log('corriendo el servidor ok')
+app.listen(process.env.PORT || 3000, () => {
+  console.log('Servidor local activado en 3000')
 })
 
 app.get('/', (req, res) => {
