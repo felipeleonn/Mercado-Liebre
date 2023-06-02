@@ -430,6 +430,7 @@ footer {
   font-size: 14px;
 }
 
+
 .containerFormularioRegistro label {
   font-weight: bold;
   margin-bottom: 1.25rem;
@@ -522,7 +523,7 @@ footer {
     display: block;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
   } 
 
   .containerLogoSearchBar p {
