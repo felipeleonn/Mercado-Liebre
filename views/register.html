@@ -129,12 +129,23 @@
 
     <main class="mainRegistro">
       <form class="containerFormularioRegistro" action="/" method="GET">
-        <input type="text" name="nombre" placeholder="Nombre y apellido" />
-        <input type="text" name="usuario" placeholder="Nombre de usuario" />
-        <input type="email" name="email" placeholder="E-mail" />
+        <input
+          required
+          type="text"
+          name="nombre"
+          placeholder="Nombre y apellido"
+        />
+        <input
+          required
+          type="text"
+          name="usuario"
+          placeholder="Nombre de usuario"
+        />
+        <input required type="email" name="email" placeholder="E-mail" />
 
         <label for="fechaNacimiento">Fecha de nacimiento</label>
         <input
+          required
           type="date"
           name="fechaNacimiento"
           id="fechaNacimiento"
@@ -142,17 +153,19 @@
           min="1900-01-01"
           max="2023-12-31"
         />
-        <input type="text" name="domicilio" placeholder="Domicilio" />
+        <input required type="text" name="domicilio" placeholder="Domicilio" />
 
         <label for="perfilUsuario">Perfil del usuario</label>
         <div class="containerPerfilUsuario">
           <input
+            required
             type="radio"
             name="perfil"
             id="perfilUsuario"
             value="Comprador"
           />
           <input
+            required
             type="radio"
             name="perfil"
             id="perfilUsuario"
@@ -161,16 +174,36 @@
         </div>
         <label for="hobbies">Intereses</label>
         <div class="checkboxRegistro">
-          <input type="checkbox" name="hobbies" id="hobbies" value="Electro" />
-          <input type="checkbox" name="hobbies" id="hobbies" value="Moda" />
-          <input type="checkbox" name="hobbies" id="hobbies" value="Hogar" />
           <input
+            required
+            type="checkbox"
+            name="hobbies"
+            id="hobbies"
+            value="Electro"
+          />
+          <input
+            required
+            type="checkbox"
+            name="hobbies"
+            id="hobbies"
+            value="Moda"
+          />
+          <input
+            required
+            type="checkbox"
+            name="hobbies"
+            id="hobbies"
+            value="Hogar"
+          />
+          <input
+            required
             type="checkbox"
             name="hobbies"
             id="hobbies"
             value="Juguetería"
           />
           <input
+            required
             type="checkbox"
             name="hobbies"
             id="hobbies"
@@ -181,6 +214,7 @@
         <div class="contenedorPerfilRegistro">
           <label for="profilePic">Seleccionar una imagen para el perfil:</label>
           <input
+            required
             type="file"
             name="profilePic"
             id="profilePic"
@@ -191,6 +225,7 @@
 
         <input type="password" name="password" placeholder="Contraseña" />
         <input
+          required
           type="password"
           name="password"
           placeholder="Confirmar Contraseña"
@@ -202,6 +237,7 @@
         </div>
       </form>
     </main>
+
     <footer>
       <div class="footerContainer">
         <section>
