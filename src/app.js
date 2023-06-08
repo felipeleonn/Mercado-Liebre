@@ -5,7 +5,7 @@ const app = express();
 const mainRouter = require('./routes/mainRouter');
 
 // Colocar ambas líneas para que funcione EJS
-app.set( 'views', path.join(__dirname, 'views') );
+app.set( 'views', path.join(__dirname, '../views') );
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
