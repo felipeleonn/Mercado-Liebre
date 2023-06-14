@@ -1,7 +1,7 @@
 module.exports = {
 
   index: (req, res) => {
-    res.render('home')
+    res.render('index')
   },
   login: (req, res) => {
     res.render('login')
@@ -12,5 +12,5 @@ module.exports = {
 
 }
 
-// el segundo parámetro que recibe render puede ser un objeto literal el cual se usa dinamicamente en EJS 
+// el segundo parámetro que recibe render puede ser un objeto literal el cual se usa dinamicamente en EJS
 // El metodo send envía texto y el metodo render la vista
