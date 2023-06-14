@@ -1,7 +1,15 @@
+const fs = require('fs');
+const path = require('path');
+const rutaBase = path.resolve('./src/database/products.json')
+
+const productos = JSON.parse(fs.readFileSync(rutaBase));
+
+
+
 module.exports = {
 
   index: (req, res) => {
-    res.render('index')
+    return res.render('index', { productos: productos })
   },
   login: (req, res) => {
     res.render('login')
@@ -12,5 +20,3 @@ module.exports = {
 
 }
 
-// el segundo parámetro que recibe render puede ser un objeto literal el cual se usa dinamicamente en EJS
-// El metodo send envía texto y el metodo render la vista
