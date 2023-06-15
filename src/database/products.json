@@ -2,29 +2,40 @@
   {
     "id": 1,
     "nombre": "Cafetera Moulinex",
-    "precio": "$6.770",
-    "descuento": "40% off",
-    "imagen": "/img/img-cafetera-moulinex.jpg"
+    "precio": 6770,
+    "descuento": 40,
+    "imagen": "/img/img-cafetera-moulinex.jpg",
+    "isDeleted": false
   },
   {
     "id": 2,
     "nombre": "MacBook Pro 2019",
-    "precio": "$230.000",
-    "descuento": "20% off",
-    "imagen": "/img/img-macbook-pro-2019.jpg"
+    "precio": 230000,
+    "descuento": 20,
+    "imagen": "/img/img-macbook-pro-2019.jpg",
+    "isDeleted": false
   },
   {
     "id": 3,
     "nombre": "Samsung Galaxy S10",
-    "precio": "$70.500",
-    "descuento": "10% off",
-    "imagen": "/img/img-samsung-galaxy-s10.jpg"
+    "precio": 70501,
+    "descuento": "10",
+    "imagen": "/img/img-samsung-galaxy-s10.jpg",
+    "isDeleted": false
   },
   {
     "id": 4,
     "nombre": "SmarTv Samsung 43''",
-    "precio": "$23.200",
-    "descuento": "5% off",
-    "imagen": "/img/img-tv-samsung-smart.jpg"
+    "precio": 23200,
+    "descuento": 5,
+    "imagen": "/img/img-tv-samsung-smart.jpg",
+    "isDeleted": false
+  },
+  {
+    "id": 5,
+    "nombre": "Iphone X",
+    "precio": 320000,
+    "descuento": 30,
+    "isDeleted": true
   }
 ]

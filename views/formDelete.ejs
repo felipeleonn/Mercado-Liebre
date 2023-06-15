@@ -35,6 +35,9 @@
                     <%= producto.nombre %>
                   </p>
                 </div>
+                <form action="/delete/<%= producto.id %>?_method=DELETE" method="POST">
+                  <input type="submit" value="Eliminar <%= producto.nombre %>">
+                </form>
               </article>
               <% }) %>
           </section>
@@ -66,13 +69,15 @@
                     <%= producto.nombre %>
                   </p>
                 </div>
+                <form action="/delete/<%= producto.id %>?_method=DELETE" method="POST">
+                  <input type="submit" value="Eliminar <%= producto.nombre %>">
+                </form>
               </article>
               <% }) %>
           </section>
         </div>
       </main>
 
-      <%- include('./partials/footer')%>
   </body>
 
 </html>

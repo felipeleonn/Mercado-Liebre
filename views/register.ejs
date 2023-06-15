@@ -17,17 +17,30 @@
           <input required type="text" name="domicilio" placeholder="Domicilio" />
 
           <label for="perfilUsuario">Perfil del usuario</label>
+
           <div class="containerPerfilUsuario">
-            <input required type="radio" name="perfil" id="perfilUsuario" value="Comprador" />
-            <input required type="radio" name="perfil" id="perfilUsuario" value="Vendedor" />
+            <label for="perfilUsuarioComprador">Comprador</label>
+            <input required type="radio" name="perfil" id="perfilUsuarioComprador" value="comprador" />
+            <label for="perfilUsuarioComprador">Vendedor</label>
+            <input required type="radio" name="perfil" id="perfilUsuarioVendedor" value="vendedor" />
           </div>
+
           <label for="hobbies">Intereses</label>
-          <div class="checkboxRegistro">
-            <input required type="checkbox" name="hobbies" id="hobbies" value="Electro" />
-            <input required type="checkbox" name="hobbies" id="hobbies" value="Moda" />
-            <input required type="checkbox" name="hobbies" id="hobbies" value="Hogar" />
-            <input required type="checkbox" name="hobbies" id="hobbies" value="Juguetería" />
-            <input required type="checkbox" name="hobbies" id="hobbies" value="Vida Sana" />
+          <div id="hobbies" class="checkboxRegistro">
+            <label for="hobbiesElectro">Electro</label>
+            <input required type="checkbox" name="hobbies" id="hobbiesElectro" value="electro" />
+
+            <label for="hobbiesModa">Moda</label>
+            <input required type="checkbox" name="hobbies" id="hobbiesModa" value="moda" />
+
+            <label for="hobbiesHogar">Hogar</label>
+            <input required type="checkbox" name="hobbies" id="hobbiesHogar" value="hogar" />
+
+            <label for="hobbiesJugueteria">Juguetería</label>
+            <input required type="checkbox" name="hobbies" id="hobbiesJugueteria" value="juguetería" />
+
+            <label for="hobbiesVidaSana">Vida Sana</label>
+            <input required type="checkbox" name="hobbies" id="hobbiesVidaSana" value="vidaSana" />
           </div>
 
           <div class="contenedorPerfilRegistro">

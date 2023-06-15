@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head', {title: "Mercado Liebre | Creá" }) %>
+
+  <body>
+    <%- include('./partials/header')%>
+
+      <main class="mainRegistro">
+        <form class="containerFormularioRegistro" action="/products/<%= productos.id %>?_method=PUT" method="POST">
+          <label for="">Product ID:</label>
+          <input disabled type="number" name="id" value="<%= productos.id %>" />
+          <input type="text" name="name" value="<%= productos.nombre %>" />
+          <label for="">Precio</label>
+          <input type="number" name="price" value="<%= productos.precio %>" />
+          <label for="">% de descuento</label>
+          <input type="number" name="discount" value="<%= productos.descuento %>" />
+          <button class="botonLogin" type="submit">Editar Producto</button>
+        </form>
+      </main>
+  </body>
+
+</html>
