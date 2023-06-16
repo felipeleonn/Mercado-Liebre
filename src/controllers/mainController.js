@@ -9,7 +9,8 @@ const productos = JSON.parse(fs.readFileSync(rutaBase));
 module.exports = {
 
   index: (req, res) => {
-    return res.render('index', { productos: productos })
+    const sinBorrados = productos.filter(producto => producto.isDeleted != true)
+    return res.render('index', { productos: sinBorrados })
   },
   login: (req, res) => {
     return res.render('login')
@@ -34,8 +35,10 @@ module.exports = {
     let productoNuevo = {
       "id": productos.length + 1,
       "nombre": req.body.name,
-      "precio": req.body.price,
+      "precio": parseFloat(req.body.price),
       "descuento": req.body.discount,
+      "imagen": "/img/" + req.file.filename,
+      "isDeleted": false
     }
 
     fs.writeFileSync(rutaBase, JSON.stringify([...productos, productoNuevo], null, 2), "utf-8")
@@ -66,6 +69,7 @@ module.exports = {
     productoEncontrado.nombre = req.body.name;
     productoEncontrado.precio = parseFloat(req.body.price);
     productoEncontrado.descuento = req.body.discount;
+    productoEncontrado.imagen = req.file.filename;
 
     fs.writeFileSync(rutaBase, JSON.stringify(productos, null, 2), "utf-8");
     return res.redirect("/")

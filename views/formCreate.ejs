@@ -6,10 +6,11 @@
     <%- include('./partials/header')%>
 
       <main class="mainRegistro">
-        <form class="containerFormularioRegistro" action="/products" method="POST">
-          <input required type="text" name="name" placeholder="Nombre" />
-          <input required type="number" name="price" placeholder="Precio" />
-          <input required type="number" name="discount" placeholder="Descuento" />
+        <form class="containerFormularioRegistro" action="/products" method="POST" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Nombre" />
+          <input type="number" name="price" placeholder="Precio" />
+          <input type="number" name="discount" placeholder="Descuento" />
+          <input type="file" name="image" placeholder="Imagen Prodcuto">
           <button class="botonLogin" type="submit">Crear Producto</button>
         </form>
       </main>
