@@ -30,5 +30,13 @@
     "descuento": 5,
     "imagen": "/img/img-tv-samsung-smart.jpg",
     "isDeleted": false
+  },
+  {
+    "id": 5,
+    "nombre": "Iphone X",
+    "precio": 1230,
+    "descuento": "10",
+    "imagen": "/img/1687227738539-iphonex.jpg",
+    "isDeleted": false
   }
 ]

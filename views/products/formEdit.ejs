@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head', {title: "Mercado Liebre | Creá" }) %>
+<%- include('../partials/head', {title: "Mercado Liebre | Creá" }) %>
 
   <body>
-    <%- include('./partials/header')%>
+    <%- include('../partials/header')%>
 
       <main class="mainRegistro">
         <form class="containerFormularioRegistro" action="/products/<%= productos.id %>?_method=PUT" method="POST">
